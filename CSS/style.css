@@ -19,3 +19,9 @@ h6{
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+#form1{
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
