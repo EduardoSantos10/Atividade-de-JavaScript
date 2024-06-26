@@ -1,0 +1,9 @@
+function medias(){
+
+    var num1;
+    var media; 
+
+    num1 = parseInt(document.getElementById("num1").value);
+
+    
+}

@@ -1,18 +1,20 @@
 function fibonacci(){
-    var termos;
-    var fibonacci = [0, 1];
-
-    termos = parseInt(document.getElementById("termos").value);
-
-    for(i = 2; i < termos; i++){
-        fibonacci[i - 1] + fibonacci[i - 2];
+    var termo = parseInt(document.getElementById('numero').value);
+    var resposta = document.getElementById('resposta');
+    var penultimo = 0, ultimo = 1;
+    var numero;
+  
+    if(termo<=2)
+     numero = termo-1;
+    else{
+     count=3;
+     while(count<=termo){
+      numero = ultimo + penultimo;
+      penultimo = ultimo;
+      ultimo = numero;
+      count++;
+     }
     }
-
-    if(termos === 1){
-        fibonacci = [0];
-    }else if(termos === 2){
-        fibonacci = [0, 1];
-    }
-
-    document.getElementById("resultado").innerHTML = "Sequencia de Fibonacci: " + fibonacci(", ");
-}
+    document.getElementById("resultado").innerHTML = numero;
+  }
+  
